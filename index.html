@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PheroTube</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Daisy UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
-
-</head>
-<body>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="container mx-auto">
     <!-- Header Section -->
 
     <header>
-
-        <div class="navbar mt-8 bg-white h-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <button class="btn btn-sm">Sort by view</button>
-                </ul>
-              </div>
-              <img class="ml-8" src="/images/Logo.png" alt="">
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <button class="btn px-8 lowercase text-lg bg-gray-300">Sort by view</button>
-              </ul>
-            </div>
-            <div class="navbar-end">
-                <button class="btn px-12 py-4 text-white capitalize text-[20px] bg-red-600">Blog</button>
-            </div>
+      <div class="navbar mt-8 bg-white h-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <button class="btn btn-sm">Sort by view</button>
+            </ul>
           </div>
-
+          <img src="/images/Logo.png" alt="" />
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <button class="btn px-8 lowercase text-lg bg-gray-300">
+              Sort by view
+            </button>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="btn px-12 py-4 text-white capitalize text-[20px] bg-red-600 hover:bg-red-600"
+          >
+            Blog
+          </button>
+        </div>
+      </div>
     </header>
-
-    <section class="mt-10">
-        <hr class="h-px my-8 bg-gray-400 border-0 dark:bg-gray-700">
+<!-- Main Section -->
+   <main class="container mx-auto mt-8">
+    <!-- Horizonta Line -->
+    <section class="mt-8">
+      <hr class="h-px my-8 bg-gray-400 border-0 dark:bg-gray-700" />
     </section>
-
-</body>
+<!-- Button -->
+    <section class="container mx-auto"></section>>
+      <div class="text-center">
+        <button class="btn bg-slate-300 px-8 hover:bg-red-600 hover:text-white">All</button>
+        <button class="btn bg-slate-300 px-6 ml-2 hover:bg-red-600 hover:text-white">Music</button>
+        <button class="btn bg-slate-300 px-8 ml-2 hover:bg-red-600 hover:text-white">Comedy</button>
+        <button class="btn bg-slate-300 px-8 ml-2 hover:bg-red-600 hover:text-white">Drawing</button>
+      </div>
+    </section>
+   </main>
+  </body>
 </html>
