@@ -1,11 +1,125 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>blog page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header class="container mx-auto px-5">
+        <div class="navbar py-7 border-b-2">
+            <div class="navbar-start">
+
+                <a class='btn btn-ghost normal-case text-xl hover:bg-transparent' href='/'><img
+                        src="./image/Logo.png" alt=""></a>
+            </div>
+            <div class="navbar-end">
+                <a class='btn bg-[#FF1F3D] normal-case text-white hover:text-black' href='/'>Go Home</a>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-5">
+        <div class="pt-10">
+            <h1 class="text-4xl font-semibold">Discuss the scope of var, let, and const</h1>
+            <p class="text-2xl pt-4">The keywords for declaring variables in javascript are var, let, and const. A
+                variable can be declared in
+                javascript using the venerable Var variable method. We utilize the let and const variables in the
+                current
+                javascript, which was included in the ES2015(ES6) update; it is now used more commonly in modern
+                javascript
+                than the var variable.</p>
+        </div>
+        <div class="pt-10">
+            <h1 class="text-4xl font-semibold">Tell us the use cases of null and undefined</h1>
+            <p class="text-2xl pt-4"><span class="font-bold">Null : </span>Basically, null is a primitive type of a
+                variable in JavaScript. Many people consider it a bug in JavaScript as it considers null as an object.
+                Changing or fixing this bug will break the existing codebase, so it is not yet changed. The type of null
+                is an object. That is why it is treated as an object.</p>
+            <p class="text-2xl pt-4"><span class="font-bold">Undefined : </span>There is a subtle difference between
+                null and
+                undefined, but as a programmer, it is important that we understand it clearly.
+
+                As the name suggests, undefined means "not defined". So we declare a variable but do not assign a value
+                to it, the variable becomes undefined.
+
+                Unlike null, the value of an undefined variable is set by JavaScript as undefined. The variable gets
+                created at the run-time. When we do not pass an argument for a function parameter, the default value is
+                taken as undefined. Besides, when a function doesn't return a value, it returns undefined.There is a
+                subtle difference between null and undefined, but as a programmer, it is important that we understand it
+                clearly.
+
+                As the name suggests, undefined means "not defined". So we declare a variable but do not assign a value
+                to it, the variable becomes undefined.
+
+                Unlike null, the value of an undefined variable is set by JavaScript as undefined. The variable gets
+                created at the run-time. When we do not pass an argument for a function parameter, the default value is
+                taken as undefined. Besides, when a function doesn't return a value, it returns undefined.</p>
+        </div>
+        <div class="pt-10 py-20">
+            <h1 class="text-4xl font-semibold">What do you mean by REST API?</h1>
+            <p class="text-2xl pt-4">There are numerous types of APIs, making it difficult for new developers to
+                differentiate between each kind. In particular, Representational State Transfer (REST) is a software
+                architectural style that developers apply to web APIs. REST APIs provide simple, uniform interfaces
+                because they can be used to make data, content, algorithms, media, and other digital resources available
+                through web URLs. Essentially, REST APIs are the most common APIs used across the web today.</p>
+        </div>
+    </main>
+    <footer class="bg-base-200">
+        <footer class="footer p-10  text-base-content container mx-auto">
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="footer-title">Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+                        <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+            
+        </footer>
+        <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded"> 
+            <nav>
+              <div class="grid grid-flow-col gap-4">
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+                <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+              </div>
+            </nav> 
+            <aside>
+              <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+            </aside>
+          </footer>
+    </footer>
 </body>
+
 </html>
