@@ -16,9 +16,7 @@ const loadAllButtons = async () => {
     const addButton = document.createElement("button");
     addButton.classList = `px-5 py-2 text-center justify-center bg-slate-300 rounded-lg hover:bg-[#FF1F3D] hover:text-white font-medium text-lg`;
     addButton.id = `${category.category_id}`;
-    addButton.innerText = `${category.category}`;
-    // addButton.setAttribute("onClick", "displaytab(this.id)");
-  
+    addButton.innerText = `${category.category}`;  
     buttonContainer.appendChild(addButton);
   });
 };
